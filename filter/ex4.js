@@ -19,7 +19,7 @@ Exemple d'entrée:
   { name: 'Huawei P20', price: 480 },
   { name: 'Huawei P20 Pro', price: 649 }
 ]
-2. prix maximum: 500
+const max= 500
 
 Sortie attendue:
   [
@@ -28,8 +28,13 @@ Sortie attendue:
   ]
  */
 
-function filterOnPrice(products, maxPrice) {
-}
+const filterOnPrice=(products, maxPrice) => products.filter(x=> x.price<=maxPrice);
+  
+    
+
+  
+  
+
 
 // Ne pas modifier l'export
 module.exports = filterOnPrice;

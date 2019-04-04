@@ -15,8 +15,12 @@ Exemple d'entrée:
 
  */
 
-function getMultiplesOf(numbers, n) {
-}
+function getMultiplesOf(arr, n) {
+  let result= arr.filter(num => !(num%n))
+    
+  return result;
+  }
+
 
 // Ne pas modifier l'export
 module.exports = getMultiplesOf;
